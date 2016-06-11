@@ -39,14 +39,6 @@
 	</properties>
 	<dependencies>
 	
-	    <dependency>
-            <groupId>io.spring.platform</groupId>
-            <artifactId>platform-bom</artifactId>
-            <version>1.1.2.RELEASE</version>
-            <type>pom</type>
-            <scope>import</scope>
-        </dependency>
-
 		<dependency>
 			<groupId>org.postgresql</groupId>
 			<artifactId>postgresql</artifactId>
