@@ -81,19 +81,6 @@
         
 	</dependencies>
 	
-	<repositories>
-        <repository>
-            <id>spring-releases</id>
-            <url>https://repo.spring.io/libs-release</url>
-        </repository>
-    </repositories>
-    <pluginRepositories>
-        <pluginRepository>
-            <id>spring-releases</id>
-            <url>https://repo.spring.io/libs-release</url>
-        </pluginRepository>
-    </pluginRepositories>
-    
 	<profiles>
 		<profile>
 			<!-- When built in OpenShift the 'openshift' profile will be used when 
@@ -116,6 +103,18 @@
 						</configuration>
 					</plugin>
 				</plugins>
+				<repositories>
+                    <repository>
+                        <id>spring-releases</id>
+                        <url>https://repo.spring.io/libs-release</url>
+                    </repository>
+                </repositories>
+                <pluginRepositories>
+                    <pluginRepository>
+                        <id>spring-releases</id>
+                        <url>https://repo.spring.io/libs-release</url>
+                    </pluginRepository>
+                </pluginRepositories>
 			</build>
 		</profile>
 	</profiles>
