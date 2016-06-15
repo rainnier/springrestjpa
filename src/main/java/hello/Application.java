@@ -10,7 +10,7 @@ import org.springframework.context.annotation.Configuration;
 
 @Configuration
 @ComponentScan
-@EnableAutoConfiguration
+@EnableAutoConfiguration(exclude=DataSourceAutoConfiguration.class)
 @SpringBootApplication
 public class Application extends SpringBootServletInitializer {
 
